@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f2937;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  /* border: 2px solid purple; */
+  padding-bottom: 100px;
+}
+
+.hero-content {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  /* border: 2px solid orange; */
+}
+
+header,
+.hero {
+  margin: 0 200px;
+}
+
+.hero-titel {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero-image img {
+  width: 650px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.hero-btn {
+  color: #f9faf8;
+  background-color: #3882f6;
+  height: 30px;
+  width: 100px;
+  border: 0;
+  border-radius: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  color: #f9faf8;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0%;
+  margin: 0;
+  /* border: 2px solid green; */
+}
+
+.logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.nav-menu li {
+  margin-left: 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: #f9faf8;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------------------ Information section ------------------------------------------ */
+/* Titel */
+.random-title {
+  padding-top: 50px;
+  text-align: center; /* Centrerer titlen */
+  font-size: 24px;
+  font-weight: 900;
+  color: #1f2937;
+  background-color: #f9faf8;
+}
+
+/* Bokse sektion */
+.random-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 0 100px;
+  background-color: #f9faf8;
+}
+
+/* Selve boksen */
+.box-content {
+  height: 130px;
+  width: 130px;
+  border-radius: 10px;
+  border: 3px solid #3882f6;
+}
+
+/* Billedetekst */
+.box-text {
+  width: 130px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+/*------------------------------------------------ Qoute section ------------------------------------------ */
+
+.qoute {
+  padding: 130px 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+}
+
+.qoute-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2938;
+  text-align: left; /* Centrerer teksten vandret */
+  margin-bottom: 20px; /* Giver lidt plads under citatet */
+}
+
+.qoute-author {
+  font-size: 20px; /* Mindre tekst for forfatteren */
+  font-weight: bold; /* Gør teksten fed */
+  color: #1f2938;
+  text-align: right; /* Centrerer forfatterens navn */
+  margin-top: 0; /* Fjern unødvendig margin for bedre justering */
+}
+
+/*------------------------------------------------ Call to action section ------------------------------------------ */
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0; /* Centrerer vertikalt og reducerer ekstra padding */
+  background-color: #f9faf8; /* Ensartet baggrundsfarve */
+}
+
+.cta-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3882f6; /* Blå baggrund */
+  color: #f9faf8; /* Hvid tekst */
+  padding: 30px 80px; /* Mere luft i boksen */
+  width: 800px;
+  border-radius: 10px; /* Blødere hjørner */
+  box-sizing: border-box; /* Sørger for korrekt bredde inkl. padding */
+}
+
+.cta-titel-text {
+  flex: 1; /* Giver plads til teksten */
+}
+
+.cta-titel {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0; /* Fjern unødvendig margin */
+}
+
+.cta-text {
+  font-size: 14px;
+  margin-top: 5px; /* Luft mellem titel og tekst */
+}
+
+.cta-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-button {
+  border: 2px solid #ffffff; /* Hvid kant med korrekt stil */
+  color: #ffffff; /* Hvid tekst */
+  background-color: transparent; /* Transparent baggrund */
+  padding: 8px 16px; /* Justerer knappens størrelse */
+  font-size: 14px; /* Passende tekststørrelse */
+  font-weight: bold;
+  border-radius: 5px; /* Afrundede hjørner */
+  cursor:grabbing; /* Klikmarkør */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Glidende hover-effekt */
+}
+
+.cta-button:hover {
+  background-color: #ffffff; /* Hvid baggrund ved hover */
+  color: #000000; /* Sort tekst for kontrast */
+}
+
+/* Footer styling */
+footer {
+  text-align: center; /* Centrerer teksten */
+  color: #ffffff; /* Gør teksten hvid */
+  background-color: #1f2937; /* Mørk baggrundsfarve for kontrast */
+  padding: 30px 0; /* 20px top og bottom padding, 0 til siderne */
+  font-size: 14px; /* Justerer tekststørrelse */
+  
+}
+
+
